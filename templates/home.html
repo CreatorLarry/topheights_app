@@ -1,0 +1,461 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block extra_css %}
+
+{% endblock %}
+
+{% block content %}
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Welcome To Top Heights</h1>
+                    <nav class="d-flex align-items-center">
+                        <a href="{% url 'home' %}">Home</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-5">
+                <div class="sidebar-categories">
+                    <div class="head">Browse Categories</div>
+                    <ul class="main-categories">
+                        <li class="main-nav-list"><a data-toggle="collapse" href="#electricalAppliances"
+                                                     aria-expanded="false" aria-controls="electricalAppliances"><span
+                                class="lnr lnr-arrow-right"></span>Electrical Appliances<span
+                                class="number">(100)</span></a>
+                            <ul class="collapse" id="electricalAppliances" data-toggle="collapse" aria-expanded="false"
+                                aria-controls="electricalAppliances">
+                                <li class="main-nav-list child"><a href="#">Lighting & Fixtures<span
+                                        class="number">(15)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Switches & Sockets<span
+                                        class="number">(12)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Circuit Breakers<span
+                                        class="number">(10)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Wiring & Cables<span
+                                        class="number">(18)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Solar Panels & Accessories<span
+                                        class="number">(08)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Extension Cords & Power Strips<span
+                                        class="number">(14)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Electric Water Heaters<span class="number">(07)</span></a>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Fans & Ventilation<span
+                                        class="number">(06)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Home Security & Alarms<span class="number">(05)</span></a>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Batteries & Inverters<span class="number">(05)</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-list"><a data-toggle="collapse" href="#toolsAndAccessories"
+                                                     aria-expanded="false" aria-controls="toolsAndAccessories"><span
+                                class="lnr lnr-arrow-right"></span>Tools & Accessories<span
+                                class="number">(100)</span></a>
+                            <ul class="collapse" id="toolsAndAccessories" data-toggle="collapse" aria-expanded="false"
+                                aria-controls="toolsAndAccessories">
+                                <li class="main-nav-list child"><a href="#">Hand Tools<span
+                                        class="number">(20)</span></a>
+                                    <ul class="collapse sub-menu" id="handTools">
+                                        <li class="main-nav-list child"><a href="#">Screwdrivers<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Pliers<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Hammers<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Wrenches<span
+                                                class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Power Tools<span
+                                        class="number">(25)</span></a>
+                                    <ul class="collapse sub-menu" id="powerTools">
+                                        <li class="main-nav-list child"><a href="#">Drills<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Saws<span class="number">(5)</span></a>
+                                        </li>
+                                        <li class="main-nav-list child"><a href="#">Sanders<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Grinders<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Routers<span
+                                                class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Measuring Tools<span
+                                        class="number">(15)</span></a>
+                                    <ul class="collapse sub-menu" id="measuringTools">
+                                        <li class="main-nav-list child"><a href="#">Tape Measures<span class="number">(5)</span></a>
+                                        </li>
+                                        <li class="main-nav-list child"><a href="#">Levels<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Calipers<span
+                                                class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Safety Gear<span
+                                        class="number">(10)</span></a>
+                                    <ul class="collapse sub-menu" id="safetyGear">
+                                        <li class="main-nav-list child"><a href="#">Gloves<span
+                                                class="number">(3)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Eye Protection<span class="number">(3)</span></a>
+                                        </li>
+                                        <li class="main-nav-list child"><a href="#">Ear Protection<span class="number">(4)</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Tool Storage<span
+                                        class="number">(10)</span></a>
+                                    <ul class="collapse sub-menu" id="toolStorage">
+                                        <li class="main-nav-list child"><a href="#">Tool Boxes<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Tool Belts<span
+                                                class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Adhesives & Sealants<span
+                                        class="number">(10)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Abrasives<span
+                                        class="number">(10)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-list"><a data-toggle="collapse" href="#industrialElectricals"
+                                                     aria-expanded="false" aria-controls="industrialElectricals"><span
+                                class="lnr lnr-arrow-right"></span>Industrial Electricals<span
+                                class="number">(100)</span></a>
+                            <ul class="collapse" id="industrialElectricals" data-toggle="collapse" aria-expanded="false"
+                                aria-controls="industrialElectricals">
+                                <li class="main-nav-list child"><a href="#">Power Distribution<span
+                                        class="number">(20)</span></a>
+                                    <ul class="collapse sub-menu" id="powerDistribution">
+                                        <li class="main-nav-list child"><a href="#">Transformers<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Switchgear<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Panel Boards<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Busways<span
+                                                class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Motor Control<span
+                                        class="number">(25)</span></a>
+                                    <ul class="collapse sub-menu" id="motorControl">
+                                        <li class="main-nav-list child"><a href="#">Motor Starters<span class="number">(5)</span></a>
+                                        </li>
+                                        <li class="main-nav-list child"><a href="#">Variable Frequency Drives
+                                            (VFDs)<span class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Programmable Logic Controllers
+                                            (PLCs)<span class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Servo Motors & Drives<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Industrial Automation
+                                            Components<span class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Industrial Lighting<span
+                                        class="number">(15)</span></a>
+                                    <ul class="collapse sub-menu" id="industrialLighting">
+                                        <li class="main-nav-list child"><a href="#">High Bay Lighting<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">LED Lighting Solutions<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Emergency Lighting<span
+                                                class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Instrumentation & Control<span
+                                        class="number">(10)</span></a>
+                                    <ul class="collapse sub-menu" id="instrumentationControl">
+                                        <li class="main-nav-list child"><a href="#">Sensors<span
+                                                class="number">(3)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Transmitters<span
+                                                class="number">(3)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Controllers<span
+                                                class="number">(4)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Safety & Automation<span
+                                        class="number">(10)</span></a>
+                                    <ul class="collapse sub-menu" id="safetyAutomation">
+                                        <li class="main-nav-list child"><a href="#">Safety Relays<span class="number">(5)</span></a>
+                                        </li>
+                                        <li class="main-nav-list child"><a href="#">Light Curtains<span class="number">(5)</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Cabling & Wiring Solutions<span
+                                        class="number">(10)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Grounding & Surge Protection<span
+                                        class="number">(10)</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-list"><a data-toggle="collapse" href="#smartHomeDevices"
+                                                     aria-expanded="false" aria-controls="smartHomeDevices"><span
+                                class="lnr lnr-arrow-right"></span>Smart Home Devices<span
+                                class="number">(100)</span></a>
+                            <ul class="collapse" id="smartHomeDevices" data-toggle="collapse" aria-expanded="false"
+                                aria-controls="smartHomeDevices">
+                                <li class="main-nav-list child"><a href="#">Smart Lighting<span
+                                        class="number">(15)</span></a>
+                                    <ul class="collapse sub-menu" id="smartLighting">
+                                        <li class="main-nav-list child"><a href="#">Smart Bulbs<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Smart Switches<span class="number">(5)</span></a>
+                                        </li>
+                                        <li class="main-nav-list child"><a href="#">Outdoor Smart Lighting<span
+                                                class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Smart Home Security<span
+                                        class="number">(20)</span></a>
+                                    <ul class="collapse sub-menu" id="smartHomeSecurity">
+                                        <li class="main-nav-list child"><a href="#">Smart Cameras<span class="number">(5)</span></a>
+                                        </li>
+                                        <li class="main-nav-list child"><a href="#">Smart Doorbell Cameras<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Smart Locks<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Alarm Systems<span class="number">(5)</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Smart Speakers & Displays<span
+                                        class="number">(15)</span></a>
+                                    <ul class="collapse sub-menu" id="smartSpeakers">
+                                        <li class="main-nav-list child"><a href="#">Smart Speakers with Assistants<span
+                                                class="number">(8)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Smart Displays<span class="number">(7)</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Smart Thermostats & Climate Control<span
+                                        class="number">(10)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Smart Plugs & Outlets<span
+                                        class="number">(10)</span></a></li>
+                                <li class="main-nav-list child"><a href="#">Smart Appliances<span
+                                        class="number">(10)</span></a>
+                                    <ul class="collapse sub-menu" id="smartAppliances">
+                                        <li class="main-nav-list child"><a href="#">Smart Refrigerators<span
+                                                class="number">(3)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Smart Ovens<span
+                                                class="number">(3)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Smart Washers & Dryers<span
+                                                class="number">(4)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Smart Entertainment<span
+                                        class="number">(10)</span></a>
+                                    <ul class="collapse sub-menu" id="smartEntertainment">
+                                        <li class="main-nav-list child"><a href="#">Smart TVs<span
+                                                class="number">(5)</span></a></li>
+                                        <li class="main-nav-list child"><a href="#">Streaming Devices<span
+                                                class="number">(5)</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-nav-list child"><a href="#">Smart Home Hubs & Controllers<span
+                                        class="number">(10)</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-filter mt-50">
+                    <div class="top-filter-head">Product Filters</div>
+                    <div class="common-filter">
+                        <div class="head">Brands</div>
+                        <form action="#">
+                            <select name="brand" id="brand-select">
+                                <option value="samsung">Samsung (19)</option>
+                                <option value="lg">LG (25)</option>
+                                <option value="sony">Sony (22)</option>
+                                <option value="whirlpool">Whirlpool (15)</option>
+                                <option value="ge">GE (18)</option>
+                                <option value="maytag">Maytag (12)</option>
+                                <option value="kitchenaid">KitchenAid (10)</option>
+                                <option value="bosch">Bosch (14)</option>
+                                <option value="siemens">Siemens (11)</option>
+                                <option value="panasonic">Panasonic (16)</option>
+                                <option value="sharp">Sharp (9)</option>
+                                <option value="hitachi">Hitachi (8)</option>
+                                <option value="toshiba">Toshiba (7)</option>
+                                <option value="haier">Haier (13)</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="common-filter">
+                        <div class="head">Price</div>
+                        <div class="price-range-area">
+                            <div id="price-range"></div>
+                            <div class="value-wrapper d-flex">
+                                <div class="price">Price:</div>
+                                <span>Ksh</span>
+                                <div id="lower-value"></div>
+                                <div class="to">to</div>
+                                <span>Ksh</span>
+                                <div id="upper-value"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-8 col-md-7">
+                <!-- Start Filter Bar -->
+                <div class="filter-bar d-flex flex-wrap align-items-center">
+                    <div class="sorting">
+                        <select>
+                            <option value="1">Latest</option>
+                            <option value="1">Flash Sales</option>
+                            <option value="1">Price</option>
+                        </select>
+                    </div>
+                    {#                    <div class="sorting mr-auto">#}
+                    {#                        <select>#}
+                    {#                            <option value="1">Show 12</option>#}
+                    {#                            <option value="1">Show 12</option>#}
+                    {#                            <option value="1">Show 12</option>#}
+                    {#                        </select>#}
+                    {#                    </div>#}
+                    <div class="pagination">
+                        <a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                        <a href="#">6</a>
+                        <a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <!-- End Filter Bar -->
+                <!-- Start Best Seller -->
+                <section class="lattest-product-area pb-40 category-list">
+                    <div class="row">
+                        <!-- single product -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-product">
+                                <img class="img-fluid" src="{% static 'img/top-products/wall-socket.png' %}" alt="">
+                                <div class="product-details">
+                                    <h6>Wall Socket</h6>
+                                    <div class="price">
+                                        <h6>Ksh150.00</h6>
+                                        <h6 class="l-through">Ksh200.00</h6>
+                                    </div>
+                                    <div class="prd-bottom">
+
+                                        <a href="" class="social-info">
+                                            <span class="ti-bag"></span>
+                                            <p class="hover-text">add to bag</p>
+                                        </a>
+                                        <a href="" class="social-info">
+                                            <span class="lnr lnr-heart"></span>
+                                            <p class="hover-text">Wishlist</p>
+                                        </a>
+                                        {#                                        <a href="" class="social-info">#}
+                                        {#                                            <span class="lnr lnr-sync"></span>#}
+                                        {#                                            <p class="hover-text">compare</p>#}
+                                        {#                                        </a>#}
+                                        <a href="" class="social-info">
+                                            <span class="lnr lnr-move"></span>
+                                            <p class="hover-text">view more</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Best Seller -->
+                <!-- Start Filter Bar -->
+                <div class="filter-bar d-flex flex-wrap align-items-center">
+                    <div class="sorting mr-auto">
+                        <select>
+                            <option value="1">Show 12</option>
+                            <option value="1">Show 12</option>
+                            <option value="1">Show 12</option>
+                        </select>
+                    </div>
+                    <div class="pagination">
+                        <a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                        <a href="#">6</a>
+                        <a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <!-- End Filter Bar -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Start related-product Area -->
+    <section class="related-product-area section_gap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-title">
+                        <h1>Deals of the Week</h1>
+                        <p>Check out our hottest deals on must-have electrical appliances and gadgets!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+                            <div class="single-related-product d-flex">
+                                <a href="#"><img src="{% static 'img/top-products/tv-deal-05.jpg' %}" alt="fridge"></a>
+                                <div class="desc">
+                                    <a href="#" class="title">55" 4K Smart LED TV</a>
+                                    <div class="price">
+                                        <h6>Ksh 189,000.00</h6>
+                                        <h6 class="l-through">Ksh210,000.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+                            <div class="single-related-product d-flex">
+                                <a href="#"><img src="{% static 'img/top-products/blender-deal-05.jpg' %}" alt="fridge"></a>
+                                <div class="desc">
+                                    <a href="#" class="title">High-Power Blender</a>
+                                    <div class="price">
+                                        <h6>Ksh 8,000.00</h6>
+                                        <h6 class="l-through">Ksh10,000.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+                            <div class="single-related-product d-flex">
+                                <a href="#"><img src="{% static 'img/top-products/tv-deal-05.jpg' %}" alt="fridge"></a>
+                                <div class="desc">
+                                    <a href="#" class="title">Front Load Washing Machine</a>
+                                    <div class="price">
+                                        <h6>Ksh 189,000.00</h6>
+                                        <h6 class="l-through">Ksh210,000.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    </section>
+    <!-- End related-product Area -->
+{% endblock %}
+
+{% block extra_js %}
+
+{% endblock %}

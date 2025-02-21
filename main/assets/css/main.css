@@ -55,22 +55,22 @@
 /* Start Gradient Area css
 ============================================================================================ */
 .gradient-bg, .primary-btn, .add-bag .add-btn, .single-product .product-details .prd-bottom .social-info span:after, .grid-btn:hover, .list-btn:hover, .grid-btn.active, .list-btn.active, .pagination a.active, .pagination a:hover, .s_Product_carousel .owl-dots div.active, .s_product_text .card_area .icon_btn:after, .product_description_area .nav.nav-tabs li a.active, .blog-pagination .page-item.active .page-link, .single-footer-widget .click-btn {
-  background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); }
+  background: -webkit-linear-gradient(90deg, #001767 0%, #069CFB 100%);
+  background: -moz-linear-gradient(90deg, #001767 0%, #069CFB 100%);
+  background: -o-linear-gradient(90deg, #001767 0%, #069CFB 100%);
+  background: linear-gradient(90deg, #001767 0%, #069CFB 100%); }
 
 .gradient-bg-reverse, #search_input_box {
-  background: -webkit-linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
-  background: -moz-linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
-  background: -o-linear-gradient(270deg, #ffba00 0%, #ff6c00 100%);
-  background: linear-gradient(270deg, #ffba00 0%, #ff6c00 100%); }
+  background: -webkit-linear-gradient(270deg, #001767 0%, #069CFB 100%);
+  background: -moz-linear-gradient(270deg, #001767 0%, #069CFB 100%);
+  background: -o-linear-gradient(270deg, #001767  0%, #069CFB 100%);
+  background: linear-gradient(270deg, #001767 0%, #069CFB 100%); }
 
 .gradient-color, .s_product_text h2, .s_product_text .list li a.active, .product_description_area .tab-content .total_rate .box_total h4, .single-footer-widget .bb-btn {
-  background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  background: -webkit-linear-gradient(90deg, #001767 0%, #069CFB 100%);
+  background: -moz-linear-gradient(90deg, #001767 0%, #069CFB 100%);
+  background: -o-linear-gradient(90deg, #001767 0%, #069CFB 100%);
+  background: linear-gradient(90deg, #001767 0%, #069CFB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -1052,7 +1052,7 @@ h1, h2, h3, h4, h5, h6 {
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #ffba00; }
+        color: #001767; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -1118,7 +1118,7 @@ h1, h2, h3, h4, h5, h6 {
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
               border-bottom: none; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-              background: #ffba00;
+              background: #069cfb;
               color: #fff; }
         @media (min-width: 992px) {
           .header_area .navbar .nav .nav-item.submenu:hover ul {
@@ -1206,7 +1206,7 @@ h1, h2, h3, h4, h5, h6 {
 /* banner area css
 ============================================================================================ */
 .banner-area {
-  background: url(../img/banner/banner-bg.jpg) center no-repeat;
+  background: url("/static/img/banner/banner-bg-03.jpg") center no-repeat;
   background-size: cover;
   position: relative; }
   @media (max-width: 768px) {
@@ -1282,7 +1282,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222; }
 
 .organic-breadcrumb {
-  background: url(../img/banner/common-banner.jpg) center no-repeat;
+  background: url(/static/img/banner/banner-2-04-04.jpg) center no-repeat;
   background-size: cover;
   padding-top: 130px; }
   @media (max-width: 991px) {
@@ -1291,10 +1291,11 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 767px) {
     .organic-breadcrumb {
       background: none;
-      background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-      background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%); } }
+      background: -webkit-linear-gradient(90deg, #001767 0%, #069CFB 100%);
+      background: -moz-linear-gradient(90deg, #001767 0%, #069cfb 100%);
+      background: -o-linear-gradient(90deg, #001767 0%, #069cfb 100%);
+      background: linear-gradient(90deg, #001767 0%, #069cfb 100%);
+    color: #fff;} }
 
 #category .organic-breadcrumb {
   margin-bottom: 100px; }
@@ -1303,7 +1304,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 90px 0 100px 0; }
   .breadcrumb-banner h1 {
     font-weight: 600;
-    color: #fff; }
+    color: #069CFB; }
     @media (max-width: 767px) {
       .breadcrumb-banner h1 {
         font-size: 30px; } }
@@ -1312,7 +1313,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff; }
   .breadcrumb-banner nav a {
     display: inline-block;
-    color: #fff;
+    color: #069cfb;
     font-weight: 400; }
     .breadcrumb-banner nav a span {
       display: inline-block;
@@ -1748,7 +1749,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222;
     text-transform: uppercase; }
   .single-related-product:hover .desc a {
-    color: #ffba00; }
+    color: #001767; }
 
 @media (max-width: 991px) {
   .ctg-right {
@@ -3209,7 +3210,7 @@ label {
     .single-organic-product-list .product-details .rattings {
       margin-bottom: 20px; }
       .single-organic-product-list .product-details .rattings i {
-        color: #fbd600;
+        color: #001767;
         margin-right: 2px; }
       .single-organic-product-list .product-details .rattings span {
         margin-left: 5px;
@@ -3307,7 +3308,7 @@ label {
   padding-left: 10px;
   border-bottom: 1px solid #eee; }
   .sidebar-categories .main-nav-list a:hover {
-    color: #ffba00; }
+    color: 001767; }
   .sidebar-categories .main-nav-list a .number {
     color: #cccccc;
     margin-left: 10px; }
@@ -3417,13 +3418,13 @@ label {
   z-index: 1; }
 
 .pixel-radio:checked {
-  border: 7px solid #ffba00; }
+  border: 7px solid #001767; }
 
 .pixel-radio:checked::after {
   -webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
   animation: click-wave 0.65s;
-  background: #ffba00;
+  background: #001767;
   content: '';
   display: block;
   width: 20px;
@@ -3460,7 +3461,7 @@ label {
     top: -5px;
     border-radius: 50%;
     border: 0px;
-    background: #ffba00;
+    background: #001767;
     box-shadow: none;
     cursor: pointer;
     -webkit-transition: ease 0.1s;
@@ -3470,7 +3471,7 @@ label {
     .price-range-area .noUi-horizontal .noUi-handle:focus {
       outline: none; }
     .price-range-area .noUi-horizontal .noUi-handle:hover {
-      border: 3px solid #ffba00;
+      border: 3px solid #001767;
       background: #fff; }
   .price-range-area .noUi-handle::after, .price-range-area .noUi-handle::before {
     display: none; }
@@ -5790,4 +5791,4 @@ label {
   .footer-text i {
     color: #ffba00; }
 
-/*# sourceMappingURL=main.css.map */
+
